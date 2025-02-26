@@ -12,7 +12,7 @@
 
     <div class="container py-2">
         <?php
-        //Ajouter utilisateur 
+        //Ajouter utilisateur //
         if(isset($_POST['ajouter'])) {
             $login = $_POST['login'];
             $pwd = $_POST['password'];
