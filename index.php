@@ -17,13 +17,15 @@
             $login = $_POST['login'];
             $pwd = $_POST['password'];
            
+        //Vérifier si les champs sont vides
             if(!empty($login) && !empty($pwd)) {
                 require_once 'include/database.php';
                 $date = date('Y-m-d');
                 var_dump( $date);
-               $sqlStat = $pdo->prepare('INSERT INTO utilisateur VALUES(null,?,?,?)');
-               $sqlStat->execute(([$login,$pwd,"$date"]));
-               header("Location:connexion.php");
+                      
+                $sqlStat = $pdo->prepare('INSERT INTO utilisateur VALUES(null,?,?,?)');
+                $sqlStat->execute(([$login,$pwd,"$date"]));
+                header("Location:connexion.php");
 
             } else {
                 ?>
