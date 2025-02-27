@@ -1,5 +1,4 @@
 <?php
-
 //connect to database
 try{
     $pdo=new PDO("mysql:host=localhost;dbname=ecommerce_php","root","");
