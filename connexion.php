@@ -12,10 +12,12 @@
 
     <div class="container py-2">
         <?php
+        //Connexion utilisateur
             if(isset($_POST['connexion'])) {
             $login = $_POST['login'];
             $pwd = $_POST['password'];
 
+            //Vérifier si les champs sont vides
             if(!empty($login) && !empty($pwd)) {
                 require_once 'include/database.php';
                 $sqlStat = $pdo->prepare('select * from utilisateur where login=? and password=?');
