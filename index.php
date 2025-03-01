@@ -10,6 +10,7 @@
         <?php include 'include/nav.php'; ?>
 
     <div class="container py-2">
+        <h4>Ajouter utilisateur</h4>
         <?php
         //Ajouter utilisateur 
         if(isset($_POST['ajouter'])) {
