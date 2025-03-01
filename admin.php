@@ -11,12 +11,15 @@
     <?php include 'include/nav.php'; ?>
     <div class="container py-2">
 
-    <?php
+    //verify if the user is connected
+    <?php       
         session_start();
         if (!isset($_SESSION['utilisateur'])) {
             header('location:connexion.php');
         }
         ?>
+
+        //afficher le nom de l'utilisateur connecté
         <h3>Bonjour : 
         <?php
         echo $_SESSION['utilisateur']['login'];
