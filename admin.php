@@ -17,6 +17,11 @@
             header('location:connexion.php');
         }
         ?>
+        <h3>Bonjour : 
+        <?php
+        echo $_SESSION['utilisateur']['login'];
+        ?>
+        </h3>
 
 </body>
 </html>
