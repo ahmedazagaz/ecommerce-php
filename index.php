@@ -16,7 +16,6 @@
         if(isset($_POST['ajouter'])) {
             $login = $_POST['login'];
             $pwd = $_POST['password'];
-           
         //Vérifier si les champs sont vides
             if(!empty($login) && !empty($pwd)) {
                 require_once 'include/database.php';
