@@ -7,8 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <?php include 'include/nav.php'; ?>
+        <?php include 'include/nav.php'; ?>
 
     <div class="container py-2">
         <?php
