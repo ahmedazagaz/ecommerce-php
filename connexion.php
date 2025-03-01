@@ -9,7 +9,6 @@
 <body>
     
     <?php include 'include/nav.php'; ?>
-
     <div class="container py-2">
         <?php
         //Connexion utilisateur
