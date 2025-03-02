@@ -11,7 +11,7 @@
     <?php include 'include/nav.php'; ?>
     <div class="container py-2">
 
-    //verify if the user is connected
+    <!-- verify if the user is connected -->
     <?php       
         session_start();
         if (!isset($_SESSION['utilisateur'])) {
@@ -19,7 +19,7 @@
         }
         ?>
 
-        //afficher le nom de l'utilisateur connecté
+        <!-- afficher le nom de l'utilisateur connecté -->
         <h3>Bonjour : 
         <?php
         echo $_SESSION['utilisateur']['login'];

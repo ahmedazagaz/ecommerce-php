@@ -23,7 +23,6 @@
                 $sqlStat = $pdo->prepare('select * from utilisateur where login=? and password=?');
                 $sqlStat->execute(([$login,$pwd]));
                 if($sqlStat->rowCount() >=1) {
-                    session_start();
                     $_SESSION['utilisateur'] = $sqlStat->fetch();
                     header("Location:admin.php");
                 } else {

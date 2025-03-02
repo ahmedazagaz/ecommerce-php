@@ -1,4 +1,12 @@
- <!-- Purpose: Navigation bar for the admin panel -->
+<?php
+  // session_start();
+  $connecte = false;
+  if (isset($_SESSION["utilisateur"])){
+    $connecte = true;
+  }
+?>
+
+<!-- Purpose: Navigation bar for the admin panel -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Ecommerce</a>
@@ -10,9 +18,24 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php">Ajouter utilisateur</a>
         </li>
+        <?php
+        if($connecte){
+          ?>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="ajouter_categorie.php">Ajouter categorie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="ajouter_produit.php">Ajouter produit</a>
+        </li>
+          <?php
+        }else{
+          ?>
         <li class="nav-item">
           <a class="nav-link" href="connexion.php">Conexion</a>
         </li>
+          <?php
+        }
+        ?>
       </ul>
     </div>
   </div>
