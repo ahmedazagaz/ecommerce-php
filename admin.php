@@ -18,7 +18,7 @@
         }
         ?>
 
-        <!-- afficher le nom de l'utilisateur connecté -->
+        <!-- afficher le nom de l'utilisateur connecté. -->
         <h3>Bonjour : 
         <?php
         echo $_SESSION['utilisateur']['login'];
