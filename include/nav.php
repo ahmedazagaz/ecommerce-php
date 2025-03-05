@@ -1,5 +1,7 @@
 <?php
+  // Start the session
   session_start();
+  // Check if the user is connected
   $connecte = false;
   if (isset($_SESSION["utilisateur"])){
     $connecte = true;
