@@ -1,5 +1,5 @@
 <?php
-  // session_start();
+  session_start();
   $connecte = false;
   if (isset($_SESSION["utilisateur"])){
     $connecte = true;

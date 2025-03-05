@@ -13,7 +13,6 @@
 
     <!-- verify if the user is connected -->
     <?php       
-        session_start();
         if (!isset($_SESSION['utilisateur'])) {
             header('location:connexion.php');
         }
